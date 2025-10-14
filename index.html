@@ -3,6 +3,7 @@
 <head>
     <!--added fontawesome CDN link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music player 1</title>
@@ -14,7 +15,7 @@
         <div class="box-1 center">
             <h4 id="name">Drake</h4>
             <div class="art">
-                <img class="center" src="images/drake 1.jpeg" alt="drake" id="artist">
+                <img class="center" src="/images /drake 1.jpeg" alt="" id="artist">
             </div>
             <div class="artist-name">
                 <p class="title">Gods plan</p> 
@@ -36,6 +37,14 @@
                 <div class="ctrl center" onclick="backward()">
                     <i class="fa-solid fa-backward-step"></i>
             </div>
+            <div class="ctrl center" onclick="playsong()">
+                <i class="fa-solid fa-play" id="play"></i>
+                <i class="fa-solid fa-pause none"></i>
+            </div>
+            <div class="ctrl center" onclick="forward()">
+                <i class="fa-solid fa-forward-step"></i>
+            </div>
+            <audio src="" class="son"></audio>   
         </div>
     </div>
 </body>
