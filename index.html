@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--added fontawesome CDN link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
@@ -15,10 +14,10 @@
         <div class="box-1 center">
             <h4 id="name">Drake</h4>
             <div class="art">
-                <img class="center round" src="/images /drake 1.jpeg" alt="" id="artist">
+                <img class="center round" src="/images /drake 1.jpeg" alt="">
             </div>
             <div class="art-name">
-                <p class="title run">Gods plan</p> 
+                <p class="title run">God's plan</p> 
             </div>
             <div class="progress-bar">
                 <div class="time">
@@ -36,15 +35,16 @@
             <div class="msc center">
                 <div class="ctrl center" onclick="backward()">
                     <i class="fa-solid fa-backward-step"></i>
+                </div>
+                <div class="ctrl center" id="playsong()">
+                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-pause none"></i>
+                </div>
+                <div class="ctrl center" onclick="forward()">
+                   <i class="fa-solid fa-forward-step"></i>
+                </div>
+                <audio src="" class="son"></audio>   
             </div>
-            <div class="ctrl center" onclick="playsong()">
-                <i class="fa-solid fa-play" id="play"></i>
-                <i class="fa-solid fa-pause none"></i>
-            </div>
-            <div class="ctrl center" onclick="forward()">
-                <i class="fa-solid fa-forward-step"></i>
-            </div>
-            <audio src="" class="son"></audio>   
         </div>
     </div>
 </body>
