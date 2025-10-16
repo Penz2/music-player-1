@@ -21,12 +21,12 @@ function effect() {
 
     if((!playing.classList.contains('none'))){
         ad.play();
-        setInterval(prog,1000);
-        setInterval(line,1000);
-        Progress.addEventListener('click',(e)=>{
-            var widthbar2 = (e.offsetX/e.target.clientWidth) * ad.duration;
-            ad.currentTime = widthbar2;   
-        });
+       // setInterval(prog,1000);
+       // setInterval(line,1000);
+       // Progress.addEventListener('click',(e)=>{
+       //     var widthbar2 = (e.offsetX/e.target.clientWidth) * ad.duration;
+       //     ad.currentTime = widthbar2;   
+       // });
     }
     else{
         ad.pause();
