@@ -21,10 +21,10 @@ function effect() {
 
     if((!playing.classList.contains('none'))){
         ad.play();
-        setInterval(ProgressEvent,1000);
+        setInterval(prog,1000);
         setInterval(line,1000);
         Progress.addEventListener('click',(e)=>{
-            var widthbar2 = (e.offsetX /e.target.clientWidth) * ad.duration;
+            var widthbar2 = (e.offsetX/e.target.clientWidth) * ad.duration;
             ad.currentTime = widthbar2;   
         });
     }
@@ -36,6 +36,6 @@ function effect() {
     play.classList.toggle('none');
     pauses.classList.toggle('none');
     art_img.classList.toggle('round');
-    
+
 }
 
