@@ -12,23 +12,24 @@ const song_title = ['Easy On Me', 'Anti-Hero', 'Shivers', 'Levitating', 'Jimmy C
 const song_img = ['adele.jpg', 'taylor.jpg', 'ed.jpg', 'dua.jpg', 'drake.jpg'];
 const songs = ['Adele - Easy On Me.mp3', 'Taylor Swift - Anti-Hero.mp3', 'Ed Sheeran - Shivers.mp3', 'Dua Lipa - Levitating.mp3', 'Drake - Jimmy Cooks.mp3'];
 
+playSong.addEventListener('click', effect);
+
 function effect() {
 
-    if(ad.duration == ad.currentTime) {
+    if (ad.duration == ad.currentTime) {
         x += 1;
         console.log(x);
     }
 
-    if((!playing.classList.contains('none'))){
+    if ((!playing.classList.contains('none'))) {
         ad.play();
        // setInterval(prog,1000);
        // setInterval(line,1000);
-       // Progress.addEventListener('click',(e)=>{
-       //     var widthbar2 = (e.offsetX/e.target.clientWidth) * ad.duration;
+       // progres.addEventListener('click',(e) => {
+       //     var widthbar2 = (e.offsetX / e.target.clientWidth) * ad.duration;
        //     ad.currentTime = widthbar2;   
-       // });
-    }
-    else{
+       // })
+    } else {
         ad.pause();
     }
 
